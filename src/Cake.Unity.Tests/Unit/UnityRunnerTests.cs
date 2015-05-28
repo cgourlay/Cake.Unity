@@ -1,5 +1,4 @@
-﻿using Cake.Unity.Platforms;
-using Cake.Unity.Tests.Fixtures;
+﻿using Cake.Unity.Tests.Fixtures;
 using System;
 using System.Collections.Generic;
 using System.Linq;

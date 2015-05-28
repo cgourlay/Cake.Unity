@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.22013.1
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cake.Unity", "Cake.Unity\Cake.Unity.csproj", "{0222DDD2-3716-4E19-854F-EB36D04268D0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cake.Mix", "Cake.Unity\Cake.Mix.csproj", "{0222DDD2-3716-4E19-854F-EB36D04268D0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cake.Unity.Tests", "Cake.Unity.Tests\Cake.Unity.Tests.csproj", "{9AA57ADE-FA83-4162-9CAA-ED7C1219EED4}"
 EndProject
@@ -24,5 +24,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NDepend) = preSolution
+		Project = ".\Cake.Mix.ndproj"
 	EndGlobalSection
 EndGlobal

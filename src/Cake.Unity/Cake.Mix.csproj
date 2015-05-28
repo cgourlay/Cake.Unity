@@ -7,8 +7,8 @@
     <ProjectGuid>{0222DDD2-3716-4E19-854F-EB36D04268D0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Cake.Unity</RootNamespace>
-    <AssemblyName>Cake.Unity</AssemblyName>
+    <RootNamespace>Cake.Mix</RootNamespace>
+    <AssemblyName>Cake.Mix</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -35,19 +35,15 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Platforms\WindowsPlatform.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UnityExtensions.cs" />
-    <Compile Include="UnityPlatformTarget.cs" />
-    <Compile Include="UnityRunner.cs" />
-    <Compile Include="IUnityPlatform.cs" />
+    <Compile Include="SqlExtensions.cs" />
+    <Compile Include="SqlHelper.cs" />
+    <Compile Include="SqlSettings.cs" />
+    <Compile Include="ISqlSettings.cs" />
+    <Compile Include="SqlStatementList.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

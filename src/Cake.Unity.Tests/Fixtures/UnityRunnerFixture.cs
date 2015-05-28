@@ -1,5 +1,6 @@
 ﻿using Cake.Core;
 using Cake.Core.IO;
+using Cake.Mix;
 using NSubstitute;
 using System;
 using System.Collections.Generic;
@@ -18,7 +19,7 @@ namespace Cake.Unity.Tests.Fixtures
 
         public ICakeContext Context { get; set; }
         public DirectoryPath ProjectPath { get; set; }
-        public IUnityPlatform Platform { get; set; }
+        public ISqlPlatform Platform { get; set; }
 
         public bool DefaultToolPathExist { get; set; }
         public bool ProjectPathExist { get; set; }
@@ -27,7 +28,7 @@ namespace Cake.Unity.Tests.Fixtures
         {
             Context = Substitute.For<ICakeContext>();
             ProjectPath = new DirectoryPath("C:/Project");            
-            Platform = Substitute.For<IUnityPlatform>();
+            Platform = Substitute.For<ISqlPlatform>();
 
             DefaultToolPathExist = true;
             ProjectPathExist = true;
@@ -49,7 +50,7 @@ namespace Cake.Unity.Tests.Fixtures
 
         public void ExecuteRunner()
         {
-            var runner = new UnityRunner(FileSystem, Environment, ProcessRunner);
+            var runner = new SqlRunner(FileSystem, Environment, ProcessRunner);
             runner.Run(Context, ProjectPath, Platform);
         }
     }

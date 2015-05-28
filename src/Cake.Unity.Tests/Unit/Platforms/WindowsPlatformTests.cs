@@ -1,5 +1,6 @@
 ﻿using Cake.Core.IO;
-using Cake.Unity.Platforms;
+using Cake.Mix;
+using Cake.Mix.Platforms;
 using Cake.Unity.Tests.Fixtures;
 using System;
 using System.Collections.Generic;

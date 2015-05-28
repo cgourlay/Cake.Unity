@@ -1,14 +1,9 @@
 ﻿using Cake.Core;
 using Cake.Core.IO;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Cake.Unity.Platforms
+namespace Cake.Mix.Platforms
 {
-    public sealed class WindowsPlatform : IUnityPlatform
+    public sealed class WindowsPlatform : ISqlPlatform
     {
         private readonly FilePath _outputPath;
 

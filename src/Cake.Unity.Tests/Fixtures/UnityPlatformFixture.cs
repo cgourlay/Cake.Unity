@@ -1,6 +1,5 @@
 ﻿using Cake.Core;
 using Cake.Core.IO;
-using Cake.Unity.Platforms;
 using NSubstitute;
 using System;
 using System.Collections.Generic;
